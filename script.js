@@ -42,3 +42,8 @@ searchButton.addEventListener("click", async function () {
     result.textContent = "Something went wrong. Try again.";
   }
 });
+cityInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    searchButton.click();
+  }
+});
